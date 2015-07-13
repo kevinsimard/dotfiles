@@ -1,0 +1,145 @@
+set nocompatible                                    " vi compatibility
+colorscheme predawn                                 " colorscheme
+syntax on                                           " enable syntax
+
+" Plugin {{
+    " DBGPavim {{
+        let g:dbgPavimPort=9000
+        let g:dbgPavimBreakAtEntry=1
+        let g:dbgPavimPathMap=[['<LOCAL_TARGET>','<REMOTE_TARGET>'],]
+    " }}
+" }}
+
+" General {{
+    set autowrite                                   " automatically save on buffer switch
+    set backspace=indent,eol,start                  " allow backspacing over everything in insert mode
+    set hidden                                      " do not unload buffers when they are not in a window
+    set history=1000                                " number of commands to remember in the history
+    set mouse=a                                     " enable the use of the mouse in all four modes
+    set noautochdir                                 " disable auto change directory when you open a file
+    set noexrc                                      " disable the reading of .vimrc file in current directory
+    set visualbell                                  " use visual bell instead of beeping
+" }}
+
+" Search {{
+    set ignorecase                                  " ignore case in search patterns
+    set incsearch                                   " search as characters are entered
+    set infercase                                   " same as smartcase but for insert-mode completions
+    set hlsearch                                    " highlight all matches of the current search
+    set nowrapscan                                  " do not wrap around when searching
+    set smartcase                                   " case only when a search contains upper-case characters
+    set tags=.git/tags                              " filenames for the tag command
+    set wildignore=*.dll,*.bak,*.pyc,.DS_Store      " default files to ignore when tab completing
+    set wildignore+=*/vendor/**                     " ignore PHP vendor files from composer when tab completing
+" }}
+
+" Indent {{
+    set autoindent                                  " autoindenting cursor after pressing return
+    set copyindent                                  " copy the previous indentation on autoindenting
+    set expandtab                                   " use spaces instead of tabs
+    set nowrap                                      " do not wrap lines that are too long
+    set shiftround                                  " use multiple of shiftwidth when indenting with < and >
+    set shiftwidth=4                                " number of spaces to use for autoindenting
+    set smarttab                                    " insert tabs on the start of a line according to shiftwidth
+    set softtabstop=4                               " number of spaces per tab (insert mode)
+    set tabstop=4                                   " number of spaces per tab (visual mode)
+" }}
+
+" Backup {{
+    set backupdir=~/.vim/backup//                   " backup files out of the project root
+    set directory=~/.vim/swap//                     " swap files out of the project root
+    set undodir=~/.vim/undo//                       " undo history files out of the project root
+    set undofile                                    " persistent undo history even after a file is closed
+" }}
+
+" Interface {{
+    set cursorline                                  " highlight current line
+    set lazyredraw                                  " prevent redraw when executing macros
+    set linespace=15                                " number of additional pixels between lines
+    set number                                      " show line numbers in the gutter
+    set scrolloff=5                                 " number of lines to keep for scope at top and bottom of window
+    set shortmess=aOstT                             " settings for shortening messages; avoid press a key prompt
+    set showmatch                                   " highlight matching brackets [{()}]
+    set showcmd                                     " show incomplete cmds down the bottom
+    set showmode                                    " show current mode down the bottom
+    set sidescrolloff=5                             " number of lines to keep for scope at side of window
+    set t_Co=256                                    " number of colors
+    set wildmenu                                    " visual autocomplete for command menu
+
+    " Powerline {{
+        set encoding=utf-8                          " necessary to show Unicode glyphs
+        set laststatus=2                            " always show the statusline
+        set noshowmode                              " hide the default mode text
+    " }}
+" }}
+
+" Filetype {{
+    " automatically detect file types
+    filetype plugin indent on
+" }}
+
+" Global {{
+    " allows cursor change in tmux mode
+    if exists('$TMUX')
+        let &t_SI="\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+        let &t_EI="\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+    else
+        let &t_SI="\<Esc>]50;CursorShape=1\x7"
+        let &t_EI="\<Esc>]50;CursorShape=0\x7"
+    endif
+" }}
+
+" Auto {{
+    " removes trailing whitespaces
+    autocmd BufWritePre * :%s/\s\+$//e
+" }}
+
+" Keybind {{
+    " map leader key to comma
+    let mapleader=','
+    let g:mapleader=','
+
+    " easy escaping to normal mode
+    imap jk <esc>
+
+    " quick way of leaving a file
+    nmap <leader>q :q!<cr>
+
+    " quick way of saving a file
+    nmap <leader>w :w!<cr>
+
+    " clear highlighted matches of the current search
+    nmap <silent> <leader>/ :nohlsearch<CR>
+
+    " map ; to : (lazy holding shift)
+    nnoremap ; :
+
+    " auto change directory to match current file
+    nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+    " run PHPUnit tests in current directory
+    nnoremap <Leader>t :!phpunit %<cr>
+
+    " save assortment of windows in session
+    nnoremap <leader>s :mksession<CR>
+
+    " down is really the next line
+    nnoremap j gj
+    nnoremap k gk
+
+    " Movement {{
+        " easier window navigation
+        nmap <C-h> <C-w>h
+        nmap <C-j> <C-w>j
+        nmap <C-k> <C-w>k
+        nmap <C-l> <C-w>l
+    " }}
+
+    " Split {{
+        " create split windows in all four directions
+        nnoremap <Leader>H :silent leftabove v<cr>
+        nnoremap <Leader>J :silent belowright<cr>
+        nnoremap <Leader>K :silent aboveleft<cr>
+        nnoremap <Leader>L :silent rightbelow v<cr>
+    " }}
+" }}
