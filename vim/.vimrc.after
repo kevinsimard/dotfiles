@@ -102,6 +102,9 @@ syntax on                                           " enable syntax
     " escape to normal mode
     imap jk <esc>
 
+    " toggle nerdtree sidebar
+    nmap <C-b> :NERDTreeToggle<cr>
+
     " quick way of leaving a file
     nmap <leader>q :q!<cr>
 
