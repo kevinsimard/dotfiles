@@ -114,9 +114,6 @@ syntax on                                           " enable syntax
     " clear highlighted matches of the current search
     nmap <silent> <leader>/ :nohlsearch<CR>
 
-    " map ; to : (lazy holding shift)
-    nnoremap ; :
-
     " auto change directory to match current file
     nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
@@ -125,10 +122,6 @@ syntax on                                           " enable syntax
 
     " save assortment of windows in session
     nnoremap <leader>s :mksession<CR>
-
-    " down is really the next line
-    nnoremap j gj
-    nnoremap k gk
 
     " Movement {{
         " window navigation
