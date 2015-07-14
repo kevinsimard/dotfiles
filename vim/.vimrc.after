@@ -4,7 +4,8 @@ syntax on                                           " enable syntax
 
 " Plugin {{
     " DBGPavim {{
-        let g:dbgPavimPathMap=[['<LOCAL_TARGET>','<REMOTE_TARGET>'],]
+        let g:dbgPavimBreakAtEntry=1
+        let g:dbgPavimPathMap=[['<LOCAL_DIRECTORY'>, '<REMOTE_DIRECTORY>'],]
     " }}
 " }}
 
