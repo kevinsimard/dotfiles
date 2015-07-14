@@ -133,9 +133,9 @@ syntax on                                           " enable syntax
 
     " Split {{
         " create split windows in all four directions
-        nnoremap <Leader>H :silent leftabove v<cr>
-        nnoremap <Leader>J :silent belowright<cr>
-        nnoremap <Leader>K :silent aboveleft<cr>
-        nnoremap <Leader>L :silent rightbelow v<cr>
+        nnoremap <Leader>H :silent leftabove vs<cr>
+        nnoremap <Leader>J :silent belowright sp<cr>
+        nnoremap <Leader>K :silent aboveleft sp<cr>
+        nnoremap <Leader>L :silent rightbelow vs<cr>
     " }}
 " }}
