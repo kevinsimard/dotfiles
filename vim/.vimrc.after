@@ -74,7 +74,7 @@ syntax on                                           " enable syntax
 " }}
 
 " Filetype {{
-    " automatically detect file types
+    " detect file types
     filetype plugin indent on
 " }}
 
@@ -95,11 +95,11 @@ syntax on                                           " enable syntax
 " }}
 
 " Keybind {{
-    " map leader key to comma
+    " map leader key
     let mapleader=','
     let g:mapleader=','
 
-    " easy escaping to normal mode
+    " escape to normal mode
     imap jk <esc>
 
     " quick way of leaving a file
@@ -128,7 +128,7 @@ syntax on                                           " enable syntax
     nnoremap k gk
 
     " Movement {{
-        " easier window navigation
+        " window navigation
         nmap <C-h> <C-w>h
         nmap <C-j> <C-w>j
         nmap <C-k> <C-w>k
