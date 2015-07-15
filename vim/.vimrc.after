@@ -29,7 +29,6 @@ syntax on                                           " enable syntax
     set smartcase                                   " case only when a search contains upper-case characters
     set tags=.git/tags                              " filenames for the tag command
     set wildignore=*.dll,*.bak,*.pyc,.DS_Store      " default files to ignore when tab completing
-    set wildignore+=*/vendor/**                     " ignore PHP vendor files from composer when tab completing
 " }}
 
 " Indent {{
