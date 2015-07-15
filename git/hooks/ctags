@@ -6,7 +6,10 @@ set -e
 # get git directory path
 dir="`git rev-parse --git-dir`"
 
-# generate the ctag file
+# remove existing ctag file
+rm "$dir/tags"
+
+# generate ctag file
 git ls-files | \
     ctags -L - -f"$dir/tags" \
         --recurse \
