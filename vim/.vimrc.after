@@ -7,6 +7,34 @@ syntax on                                           " enable syntax
         let g:dbgPavimBreakAtEntry=1
         let g:dbgPavimPathMap=[['<LOCAL_DIRECTORY'>, '<REMOTE_DIRECTORY>'],]
     " }}
+
+    " TagList
+        " update tags automatically
+        let Tlist_Auto_Update=1
+
+        " use small version of the menu
+        let Tlist_Compact_Format=1
+
+        " exit when TList is the only window
+        let Tlist_Exist_OnlyWindow=1
+
+        " order tags by appearance in file
+        let Tlist_Sort_Type='order'
+
+        " split to the right side
+        let Tlist_Use_Right_Window=1
+
+         " sidebar columns wide"
+        let Tlist_WinWidth=40
+
+        " faster highlighting
+        set updatetime=100
+
+        " Language specifics {{
+            " search for functions, classes and constants
+            let tlist_php_settings='php;c:class;d:constant;f:function'
+        " }}
+    " }}
 " }}
 
 " General {{
@@ -90,6 +118,9 @@ syntax on                                           " enable syntax
 " Auto {{
     " removes trailing whitespaces
     autocmd BufWritePre * :%s/\s\+$//e
+
+    " update tag list automatically
+    autocmd BufRead * TlistUpdate
 " }}
 
 " Keybind {{
@@ -114,6 +145,9 @@ syntax on                                           " enable syntax
 
     " auto change directory to match current file
     nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+    " toggle tag list sidebar
+    nnoremap <silent> <F4> :TlistToggle<cr>
 
     " run PHPUnit tests in current directory
     nnoremap <Leader>t :!phpunit %<cr>
