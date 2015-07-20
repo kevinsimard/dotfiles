@@ -2,10 +2,12 @@ set nocompatible                                    " vi compatibility
 colorscheme predawn                                 " colorscheme
 syntax on                                           " enable syntax
 
+" Projects vim settings
+source ~/.vimrc.after.projects
+
 " Plugin {{
     " DBGPavim {{
         let g:dbgPavimBreakAtEntry=1
-        let g:dbgPavimPathMap=[['<LOCAL_DIRECTORY'>, '<REMOTE_DIRECTORY>'],]
     " }}
 
     " TagList
