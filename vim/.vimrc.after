@@ -59,6 +59,7 @@ source ~/.vimrc.after.projects
     set smartcase                                   " case only when a search contains upper-case characters
     set tags=.git/tags                              " filenames for the tag command
     set wildignore=*.dll,*.bak,*.pyc,.DS_Store      " default files to ignore when tab completing
+    set wildignore+=bootstrap/cache/compiled.php    " add Laravel compiled file to ignore when tab completing
 " }}
 
 " Indent {{
