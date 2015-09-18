@@ -46,6 +46,9 @@ set ignorecase
 " same as 'smartcase' but for insert-mode
 set infercase
 
+" characters to use on command completion
+set listchars=tab:>-,trail:-
+
 " disable start of line
 set nostartofline
 
@@ -75,16 +78,36 @@ set wildignore+=bootstrap/cache/compiled.php
 " ------------------------------------------------------------------------------
 " -------------------------- Tags
 " ------------------------------------------------------------------------------
+" program to use when using :grep
+set grepprg=ag\ --smart-case\ --nogroup\ --column
+
+" grep command output format
+set grepformat=%f:%l:%c:%m
 
 " ------------------------------------------------------------------------------
 " -------------------------- Displaying text
 " ------------------------------------------------------------------------------
+" detect file types, plugins and indent
+filetype plugin indent on
+
+" end-of-line character to use
+set fileformats=unix,mac,dos
+
+" vertical spaces between lines
+set linespace=15
+
+" show tabs visually
+set list
+
 " show line numbers
 set number
 
 " ------------------------------------------------------------------------------
 " -------------------------- Syntax, highlighting and spelling
 " ------------------------------------------------------------------------------
+" highlight current line
+set cursorline
+
 " highlight searches
 set hlsearch
 
@@ -93,6 +116,9 @@ set incsearch
 
 " highlight matching brackets
 set showmatch
+
+" enable syntax highlighting
+syntax on
 
 " ------------------------------------------------------------------------------
 " -------------------------- Multiple windows
@@ -132,6 +158,12 @@ set mouse=a
 " ------------------------------------------------------------------------------
 " -------------------------- Messages and info
 " ------------------------------------------------------------------------------
+" show status line
+set laststatus=2
+
+" threshold for reporting number lines changed
+set report=0
+
 " show cursor position
 set ruler
 
@@ -168,6 +200,9 @@ set expandtab
 " do not wrap lines
 set nowrap
 
+" number of spaces for auto indent
+set shiftwidth=4
+
 " tabs in front of line inserts
 set smarttab
 
@@ -191,6 +226,9 @@ set foldmethod=indent
 " ------------------------------------------------------------------------------
 " -------------------------- Mapping
 " ------------------------------------------------------------------------------
+" faster way to escape current mode
+imap jk <esc>
+
 " map leader key
 let mapleader=','
 
@@ -200,11 +238,36 @@ map <left> <nop>
 map <right> <nop>
 map <up> <nop>
 
+" window navigation
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+" faster way to quit a file
+nmap <leader>q :q!<cr>
+
+" faster way to save a file
+nmap <leader>w :w!<cr>
+
+" clear highlighted matches
+nmap <silent> <leader>/ :nohlsearch<CR>
+
 " split window in any of the four directions
-nnoremap <Leader>H :silent leftabove vs<cr>
-nnoremap <Leader>J :silent belowright sp<cr>
-nnoremap <Leader>K :silent aboveleft sp<cr>
-nnoremap <Leader>L :silent rightbelow vs<cr>
+nnoremap <leader>H :silent leftabove vs<cr>
+nnoremap <leader>J :silent belowright sp<cr>
+nnoremap <leader>K :silent aboveleft sp<cr>
+nnoremap <leader>L :silent rightbelow vs<cr>
+
+" run PHPUnit tests in current directory
+nnoremap <Leader>t :!phpunit %<cr>
+
+" change directory to current file
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+" auto indent pasted text
+nnoremap p p=`]<C-o>
+nnoremap P P=`]<C-o>
 
 " ------------------------------------------------------------------------------
 " -------------------------- Reading and writing files
