@@ -37,6 +37,28 @@ set nocompatible
 " disable reading .vimrc file in current directory
 set noexrc
 
+call plug#begin('~/.vim/plugged')
+
+" interactive command execution
+Plug 'Shougo/vimproc.vim'
+
+" status bar/tabline
+Plug 'bling/vim-airline'
+
+" php context-aware autocomplete
+Plug 'm2mdas/phpcomplete-extended'
+
+" file tree explorer
+Plug 'scrooloose/nerdtree'
+
+" file manager/explorer
+Plug 'Shougo/unite.vim'
+
+" code completion engine
+Plug 'Valloric/YouCompleteMe'
+
+call plug#end()
+
 " ------------------------------------------------------------------------------
 " -------------------------- Moving around, searching and patterns
 " ------------------------------------------------------------------------------
@@ -231,6 +253,9 @@ imap jk <esc>
 
 " map leader key
 let mapleader=','
+
+" toggle NERDTree sidebar
+map <leaver>b :NERDTreeToggle<CR>
 
 " disable arrow keys
 map <down> <nop>
