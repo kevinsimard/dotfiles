@@ -1,19 +1,13 @@
-# DotFiles
-
+# Dot Files
 ## Code Structure
-    ┌── git/
-    │   └── hooks/
-    │       ├── ctags
-    │       ├── post-checkout
-    │       ├── post-commit
-    │       ├── post-merge
-    │       └── post-rewrite
+    ┌── phpstorm/
+    │   └── themes/
+    │       └── predawn.jar
     ├── vim/
     │   ├── themes/
     │   │   └── predawn/
     │   │       └── colors/
     │   │           └── predawn.vim
-    │   ├── .vimrc.after
-    │   └── .vimrc.before
+    │   └── .vimrc
     ├── .gitattributes
     └── README.md

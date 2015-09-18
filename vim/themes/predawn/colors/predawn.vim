@@ -1,11 +1,8 @@
-" Vim color file
-" Converted from Textmate theme Predawn using Coloration v0.4.0 (http://github.com/sickill/coloration)
-
 set background=dark
 highlight clear
 
 if exists("syntax_on")
-  syntax reset
+    syntax reset
 endif
 
 let g:colors_name = "predawn"
