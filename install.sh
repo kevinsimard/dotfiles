@@ -1,20 +1,33 @@
 #!/usr/bin/env bash
 
+PWD=$(pwd)
+
 # vim directories
 mkdir -p ~/.vim/
 mkdir -p ~/.vim/colors/
 
 # vimrc files
-ln -sf $(pwd)/vim/.vimrc ~/.vimrc
-ln -sf $(pwd)/vim/.vimrc.before ~/.vimrc.before
-ln -sf $(pwd)/vim/.vimrc.after ~/.vimrc.after
+ln -sf $PWD/vim/.vimrc ~/.vimrc
+ln -sf $PWD/vim/.vimrc.before ~/.vimrc.before
+ln -sf $PWD/vim/.vimrc.after ~/.vimrc.after
+
+# vim pluggins
+ln -s $PWD/vim/plugged ~/.vim/plugged
+
+# vim schemes
+ln -sf $PWD/vim/themes/predawn/colors/predawn.vim ~/.vim/colors/predawn.vim
 
 # install 'junegunn/vim-plug' plugin
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# vim pluggins
-ln -s $(pwd)/vim/plugged ~/.vim/plugged
+# compile 'vimproc' native extension
+cd $PWD/vim/plugged/vimproc.vim/ && make ARCHS='i386 x86_64'
 
-# vim schemes
-ln -sf $(pwd)/vim/themes/predawn/colors/predawn.vim ~/.vim/colors/predawn.vim
+# required for 'YouCompleteMe'
+brew install cmake
+
+# compile 'YouCompleteMe' binary
+cd $PWD/vim/plugged/YouCompleteMe/ && \
+    git submodule update --init --recursive && \
+    ./install.py
