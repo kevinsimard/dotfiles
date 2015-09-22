@@ -4,10 +4,15 @@
     │   └── themes/
     │       └── predawn.jar
     ├── vim/
+    │   ├── plugged/
+    │   │   └── .gitkeep
     │   ├── themes/
     │   │   └── predawn/
     │   │       └── colors/
     │   │           └── predawn.vim
-    │   └── .vimrc
+    │   ├── .vimrc
+    │   ├── .vimrc.after
+    │   └── .vimrc.before
     ├── .gitattributes
-    └── README.md
+    ├── README.md
+    └── install.sh
