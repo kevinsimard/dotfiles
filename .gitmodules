@@ -1,0 +1,15 @@
+[submodule "vim/plugged/vimproc.vim"]
+	path = vim/plugged/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim
+[submodule "vim/plugged/vim-airline"]
+	path = vim/plugged/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule "vim/plugged/phpcomplete-extended"]
+	path = vim/plugged/phpcomplete-extended
+	url = https://github.com/m2mdas/phpcomplete-extended
+[submodule "vim/plugged/nerdtree"]
+	path = vim/plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/plugged/YouCompleteMe"]
+	path = vim/plugged/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
