@@ -219,7 +219,7 @@ set tabstop=4
 " -------------------------- Folding
 " ------------------------------------------------------------------------------
 " enable folding
-set foldenable
+set nofoldenable
 
 " fold based on indent
 set foldmethod=indent
