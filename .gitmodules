@@ -13,3 +13,6 @@
 [submodule "vim/plugged/YouCompleteMe"]
 	path = vim/plugged/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "vim/plugged/ctrlp.vim"]
+	path = vim/plugged/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim

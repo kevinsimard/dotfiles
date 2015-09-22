@@ -15,5 +15,8 @@ Plug 'scrooloose/nerdtree'
 " code completion engine
 Plug 'Valloric/YouCompleteMe'
 
+" file explorer
+Plug 'kien/ctrlp.vim'
+
 call plug#end()
 

@@ -259,19 +259,19 @@ nmap <leader>q :q!<cr>
 nmap <leader>w :w!<cr>
 
 " clear highlighted matches
-nmap <silent> <leader>/ :nohlsearch<CR>
+nmap <silent> <leader>/ :nohlsearch<cr>
 
 " split window in any of the four directions
-nnoremap <leader>H :silent leftabove vs<cr>
-nnoremap <leader>J :silent belowright sp<cr>
-nnoremap <leader>K :silent aboveleft sp<cr>
-nnoremap <leader>L :silent rightbelow vs<cr>
+nnoremap <leader>h :silent leftabove vs<cr>
+nnoremap <leader>j :silent belowright sp<cr>
+nnoremap <leader>k :silent aboveleft sp<cr>
+nnoremap <leader>l :silent rightbelow vs<cr>
 
 " run PHPUnit tests in current directory
-nnoremap <Leader>t :!phpunit %<cr>
+nnoremap <leader>t :!phpunit<cr>
 
 " change directory to current file
-nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+nnoremap ,cd :cd %:p:h<cr>:pwd<cr>
 
 " auto indent pasted text
 nnoremap p p=`]<C-o>
