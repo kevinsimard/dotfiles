@@ -1,0 +1,3 @@
+" set 'phpcomplete' command for 'composer'
+let g:phpcomplete_index_composer_command="/usr/local/bin/composer"
+
