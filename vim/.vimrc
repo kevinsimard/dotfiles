@@ -95,6 +95,9 @@ set grepformat=%f:%l:%c:%m
 " detect file types, plugins and indent
 filetype plugin indent on
 
+" show ruler
+set colorcolumn=120
+
 " end-of-line character to use
 set fileformats=unix,mac,dos
 
