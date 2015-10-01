@@ -276,6 +276,9 @@ nnoremap <leader>t :!phpunit<cr>
 " change directory to current file
 nnoremap ,cd :cd %:p:h<cr>:pwd<cr>
 
+" grep word under cursor
+nnoremap K :SG "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 " auto indent pasted text
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
