@@ -311,6 +311,8 @@ set undofile
 " ------------------------------------------------------------------------------
 " -------------------------- Command line editing
 " ------------------------------------------------------------------------------
+" run grep silently
+command! -nargs=+ SG :silent! grep <args>
 
 " ------------------------------------------------------------------------------
 " -------------------------- Executing external commands
@@ -334,7 +336,6 @@ set encoding=utf-8
 " -------------------------- Various
 " ------------------------------------------------------------------------------
 " load custom vim plugins config
-if filereadable(expand("~/.vimrc.after"))
+if filereadable(expand('~/.vimrc.after'))
     source ~/.vimrc.after
 endif
-
