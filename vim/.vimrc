@@ -52,7 +52,7 @@ set ignorecase
 set infercase
 
 " characters to use on command completion
-set listchars=trail:·
+set listchars=tab:··,trail:-
 
 " disable start of line
 set nostartofline
