@@ -5,7 +5,12 @@
     │       └── predawn.jar
     ├── vim/
     │   ├── plugged/
-    │   │   └── .gitkeep
+    │   │   ├── YouCompleteMe/
+    │   │   ├── ctrlp.vim/
+    │   │   ├── nerdtree/
+    │   │   ├── phpcomplete-extended/
+    │   │   ├── vim-airline/
+    │   │   └── vimproc.vim/
     │   ├── themes/
     │   │   └── predawn/
     │   │       └── colors/
@@ -14,5 +19,6 @@
     │   ├── .vimrc.after
     │   └── .vimrc.before
     ├── .gitattributes
+    ├── .gitmodules
     ├── README.md
     └── install.sh
