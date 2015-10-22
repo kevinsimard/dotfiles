@@ -342,3 +342,6 @@ set encoding=utf-8
 if filereadable(expand('~/.vimrc.after'))
     source ~/.vimrc.after
 endif
+
+" default working directory
+cd ~/Repos/
