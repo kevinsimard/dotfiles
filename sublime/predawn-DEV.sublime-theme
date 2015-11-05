@@ -1,0 +1,11 @@
+[
+    {
+        "class": "sidebar_label",
+        "font.size": 15
+    },
+    {
+        "class": "sidebar_tree",
+        "indent": 20,
+        "row_padding": [12, 12]
+    }
+]
