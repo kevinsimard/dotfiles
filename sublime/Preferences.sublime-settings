@@ -12,4 +12,9 @@
 
     "theme": "predawn-DEV.sublime-theme",
     "color_scheme": "Packages/Predawn/predawn.tmTheme"
+
+    "ignored_packages": [
+        "Vintage",
+        "Vintageous"
+    ]
 }
