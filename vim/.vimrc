@@ -270,9 +270,6 @@ nnoremap <leader>j :silent belowright sp<cr>
 nnoremap <leader>k :silent aboveleft sp<cr>
 nnoremap <leader>l :silent rightbelow vs<cr>
 
-" run PHPUnit tests in current directory
-nnoremap <leader>t :!phpunit<cr>
-
 " change directory to current file
 nnoremap ,cd :cd %:p:h<cr>:pwd<cr>
 
