@@ -1,4 +1,0 @@
-[
-    { "keys": ["command+t"], "command": "goto_definition" },
-    { "keys": ["command+b"], "command": "toggle_side_bar" }
-]
