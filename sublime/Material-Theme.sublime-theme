@@ -1,0 +1,67 @@
+[
+    {
+        "class": "tree_row",
+        "layer0.tint": [
+            87,
+            93,
+            107
+        ]
+    },
+    {
+        "class": "sidebar_container",
+        "layer0.opacity": 1.0,
+        "color": [
+            37,
+            43,
+            57
+        ]
+    },
+    {
+        "class": "sidebar_tree",
+        "layer0.opacity": 1,
+        "indent": 20,
+        "row_padding": [12, 12],
+        "color": [
+            37,
+            43,
+            57
+        ]
+    },
+    {
+        "class": "sidebar_label",
+        "font.size": 13,
+        "layer0.tint": [
+            87,
+            93,
+            107
+        ]
+    },
+    {
+        "class": "sidebar_heading",
+        "shadow_offset": [
+            0,
+            0
+        ]
+    },
+    {
+        "class": "disclosure_button_control",
+        "layer0.tint": [
+            87,
+            93,
+            107
+        ],
+        "layer1.tint": [
+            87,
+            93,
+            107
+        ]
+    },
+    {
+        "class": "sidebar_heading",
+        "layer0.tint": [
+            127,
+            133,
+            147
+        ]
+    }
+]

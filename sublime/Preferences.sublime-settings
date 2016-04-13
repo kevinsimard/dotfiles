@@ -1,22 +1,40 @@
 {
-    "color_scheme": "Packages/Predawn/predawn.tmTheme",
-    "ensure_newline_at_eof_on_save": true,
-    "font_size": 18,
-    "highlight_line": true,
-    "ignored_packages":
-    [
-        "Vintage",
-        "Vintageous"
-    ],
-    "line_padding_bottom": 7,
-    "line_padding_top": 7,
-    "rulers":
-    [
-        80,
-        120
-    ],
-    "tab_size": 4,
-    "theme": "predawn-DEV.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true
+	"auto_complete": true,
+	"auto_indent": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/facebook.tmTheme",
+	"default_encoding": "UTF-8",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
+	"draw_white_space": true,
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 17,
+	"gutter": true,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Vintageous"
+	],
+	"indent_subsequent_lines": true,
+	"line_numbers": false,
+	"line_padding_bottom": 7,
+	"line_padding_top": 7,
+	"margin": 4,
+	"overlay_scroll_bars": "enabled",
+	"preview_on_click": false,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"smart_indent": true,
+	"tab_completion": true,
+	"tab_size": 4,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"word_wrap": true,
+	"wrap_width": 0
 }
