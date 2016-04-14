@@ -1,6 +1,6 @@
 {
     // Fix the issues on save
-    "php_cs_fixer_on_save": true,
+    "php_cs_fixer_on_save": false,
 
     // Path to where you have the php-cs-fixer installed
     "php_cs_fixer_executable_path": "/usr/local/bin/php-cs-fixer"
