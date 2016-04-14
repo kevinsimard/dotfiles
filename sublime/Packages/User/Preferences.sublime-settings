@@ -10,7 +10,11 @@
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Fira Code",
-	"font_size": 20,
+	"font_options":
+	[
+		"no_bold"
+	],
+	"font_size": 17,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
