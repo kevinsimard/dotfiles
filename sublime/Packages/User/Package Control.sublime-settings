@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"Behat Features",
 		"EditorConfig",
 		"JSON Reindent",
 		"Laravel 5 Artisan",
