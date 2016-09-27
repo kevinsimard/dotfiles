@@ -8,6 +8,7 @@
 		"AdvancedNewFile",
 		"Behat Features",
 		"EditorConfig",
+		"Golang Build",
 		"JSON Reindent",
 		"Laravel 5 Artisan",
 		"Laravel 5 Snippets",
@@ -17,6 +18,7 @@
 		"PHP Companion",
 		"Phpcs",
 		"Predawn",
+		"Protocol Buffer Syntax",
 		"Themr",
 		"Vuejs Complete Package"
 	]
