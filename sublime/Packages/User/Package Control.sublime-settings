@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"AutoPEP8",
 		"Behat Features",
 		"EditorConfig",
 		"Golang Build",
