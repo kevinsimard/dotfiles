@@ -1,0 +1,6 @@
+[
+    { "keys": ["command+t"], "command": "goto_definition" },
+    { "keys": ["command+j"], "command": "expand_fqcn" },
+    { "keys": ["command+g"], "command": "insert_php_constructor_property" },
+    { "keys": ["command+b"], "command": "toggle_side_bar" }
+]
