@@ -2,7 +2,7 @@
 	"auto_complete": true,
 	"auto_indent": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/facebook (SL).tmTheme",
+	"color_scheme": "Packages/User/facebook.tmTheme",
 	"default_encoding": "UTF-8",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
@@ -17,6 +17,10 @@
 	"font_size": 16,
 	"gutter": true,
 	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"indent_subsequent_lines": true,
 	"line_numbers": false,
 	"line_padding_bottom": 7,
