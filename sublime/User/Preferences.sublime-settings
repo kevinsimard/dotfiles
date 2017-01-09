@@ -19,6 +19,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage"
 	],
 	"indent_subsequent_lines": true,
