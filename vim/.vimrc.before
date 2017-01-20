@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-"interactive command execution
+" interactive command execution
 Plug 'Shougo/vimproc.vim'
 
 " status bar/tabline
