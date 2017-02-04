@@ -77,8 +77,7 @@ set wildmode=list:longest,list:full
 set wildignore=*~,*.bak,*.dll,*.exe,*.pyc,.DS_Store,.git,.svn
 set wildignore+=*.gif,*.jpg,*.png
 set wildignore+=*.rar,*.tar.bz2,*.tar.gz,*.tar.xz,*.zip
-set wildignore+=*/.sass-cache/*,*/.vagrant/*
-set wildignore+=bootstrap/cache/compiled.php
+set wildignore+=*/.sass-cache/*,*/.vagrant/*,*/.idea/*
 
 " ------------------------------------------------------------------------------
 " -------------------------- Tags
@@ -341,4 +340,4 @@ if filereadable(expand('~/.vimrc.after'))
 endif
 
 " default working directory
-cd /Volumes/HD/Repos/
+cd /Volumes/HD/repos/

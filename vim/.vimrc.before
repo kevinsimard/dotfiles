@@ -1,21 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
-" interactive command execution
-Plug 'Shougo/vimproc.vim'
-
 " status bar/tabline
-Plug 'bling/vim-airline'
-
-" php context-aware autocomplete
-Plug 'm2mdas/phpcomplete-extended'
+Plug 'vim-airline/vim-airline'
 
 " file tree explorer
 Plug 'scrooloose/nerdtree'
 
-" code completion engine
-Plug 'Valloric/YouCompleteMe'
-
 " file explorer
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
