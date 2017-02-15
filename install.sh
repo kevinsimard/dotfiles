@@ -16,3 +16,7 @@ ln -sf $(pwd)/vim/themes/predawn/colors/predawn.vim ~/.vim/colors/predawn.vim
 # vim plugins
 ln -sf $(pwd)/vim/plug.vim ~/.vim/autoload/plug.vim
 ln -sf $(pwd)/vim/plugged/ ~/.vim/plugged/
+
+# editorconfig file
+ln -sf $(pwd)/.editorconfig ~/.editorconfig
+ln -sf $(pwd)/.editorconfig /Volumes/HD/.editorconfig
