@@ -8,6 +8,7 @@
 	"draw_indent_guides": true,
 	"draw_white_space": true,
 	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Fira Code",
 	"font_options":
 	[
