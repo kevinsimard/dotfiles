@@ -226,4 +226,4 @@ if filereadable(expand('~/.vimrc.after'))
 endif
 
 " default working directory
-cd /Volumes/HD/repos/
+cd /Volumes/HD/Repos/
