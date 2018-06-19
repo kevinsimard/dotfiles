@@ -203,7 +203,7 @@ set nobackup
 set noswapfile
 
 " undo directory path
-set undodir=~/.vim/undo//
+set undodir=~/.vim/undo/
 if !isdirectory(expand('~').'/.vim/undo')
     silent !mkdir ~/.vim/undo > /dev/null 2>&1
 endif
@@ -221,6 +221,3 @@ set encoding=utf-8
 if filereadable(expand('~/.vimrc.after'))
     source ~/.vimrc.after
 endif
-
-" default working directory
-cd /Volumes/HD/Repos/
