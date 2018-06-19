@@ -82,9 +82,6 @@ syntax on
 " do not unload buffers
 set hidden
 
-" colorscheme
-colorscheme predawn
-
 " number of colors
 set t_Co=256
 
