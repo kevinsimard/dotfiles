@@ -1,5 +1,5 @@
 export EDITOR=vim
-export ZSH=/Users/k/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 plugins=(git kubectl)
 
